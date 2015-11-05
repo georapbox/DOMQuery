@@ -1,0 +1,29 @@
+{
+  "name": "DOMQuery",
+  "alias": "Q",
+  "version": "0.1.0",
+  "stability": "beta",
+  "description": "Skinny DOM library for modern browsers",
+  "homepage": "https://github.com/georapbox/DOMQuery",
+  "repository": "https://github.com/georapbox/DOMQuery.git",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch",
+    "build:dev": "gulp build:dev",
+    "build:live": "gulp build:live",
+    "build": "gulp build:all"
+  },
+  "keywords": [],
+  "author": "George Raptis <georapbox@gmail.com> (https://github.com/georapbox)",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^10.0.0",
+    "gulp": "^3.8.11",
+    "gulp-header": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
