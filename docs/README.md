@@ -23,6 +23,6 @@ Q().parent().css({color: 'blue'}).toggleClass('foo').attr('data-test', 'test');
 | Method | Description |
 |--------|-------------|
 |[.addClass()](methods/addClass.md#addclass)|Adds the specified class(es) to each element in the set of matched elements.|
+|[.hasClass()](methods/hasClass.md#hasclass)|Determine whether any element in the set of matched elements contain the given class.|
 |[.removeClass()](methods/removeClass.md#removeclass)|Removes the specified class(es) from each element in the set of matched elements.|
 |[.toggleClass()](methods/toggleClass.md#toggleclass)|Add or remove one or more classes from each matched element, depending on either the class's presence or the value of the optional state argument.|
-|[.hasClass()](methods/hasClass.md#hasclass)|Determine whether any element in the set of matched elements contain the given class.|
