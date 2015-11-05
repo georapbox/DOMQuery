@@ -34,6 +34,10 @@ DOMQuery exposes 2 variables to the window global object:
 
 To avoid any possible conflicts with other global objects you can change those namespaces in the ```package.json``` file by changing the ```name``` and ```alias``` properties. After you change any of them make sure to rebuild the library in order to generate the updated bundles.
 
+## DOMQuery API documentation
+
+[Click for API documention](docs)
+
 ## TODO
 1. Add more methods to library
 2. Add API documentation

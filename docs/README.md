@@ -22,4 +22,4 @@ Q().parent().css({color: 'blue'}).toggleClass('foo').attr('data-test', 'test');
 
 | Method | Description |
 |--------|-------------|
-|[.addClass()](methods/addClass.md)|Adds the specified class(es) to each element in the set of matched elements.|
+|[.addClass()](methods/addClass.md#addclass)|Adds the specified class(es) to each element in the set of matched elements.|

@@ -4,7 +4,7 @@
 .addClass(className)
 ```
 
-Returns: [DOMQuery](../README.md#DOMQuery)
+Returns: [DOMQuery](../README.md#domquery-q)
 
 **Description:** Adds the specified class(es) to each element in the set of matched elements.
 
