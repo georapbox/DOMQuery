@@ -1,5 +1,5 @@
 # DOMQuery (experimental)
-DOMQuery (aka Q) is a skinny, experimental DOM library for modern browsers with a jQuery like API. So far it comes with the methods I found myself using more often when I mess around with DOM.
+DOMQuery (aka Q) is a skinny, experimental DOM library for modern browsers with a jQuery like API. So far it comes with some of the methods I found myself using more often when I mess around with DOM.
 
 ## Build
 
@@ -33,3 +33,9 @@ DOMQuery exposes 2 variables to the window global object:
 2. ```Q``` as alias for DOMQuery
 
 To avoid any possible conflicts with other global objects you can change those namespaces in the ```package.json``` file by changing the ```name``` and ```alias``` properties. After you change any of them make sure to rebuild the library in order to generate the updated bundles.
+
+## TODO
+1. Add more methods to library
+2. Add API documentation
+3. Do some unit testing for each library methods
+4. Optimize for performance where possible
