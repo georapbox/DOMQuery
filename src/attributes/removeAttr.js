@@ -8,7 +8,7 @@ module.exports = (function () {
     return function attr(attrName) {
         if (attrName && u.is.string(attrName)) {
             iterate(this, function (el) {
-                el.nodeType === 1 && el.removeAttribute(attrName);
+                u.is.element(el) && el.removeAttribute(attrName);
             });
         }
         return this;

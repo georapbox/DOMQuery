@@ -2,11 +2,12 @@ module.exports = (function () {
     'use strict';
 
     // Require dependencies
-    var iterate = require('_iterator');
+    var u = require('utils/index'),
+        iterate = require('_iterator');
 
     function setDisplay(context, mode) {
         iterate(context, function (el) {
-            if (el.nodeType === 1) {
+            if (u.is.element(el)) {
                 el.style.display = mode;
             }
         });

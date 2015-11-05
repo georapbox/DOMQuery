@@ -2,7 +2,8 @@ module.exports = (function () {
     'use strict';
 
     // Require dependencies
-    var iterate = require('_iterator');
+    var u = require('utils/index'),
+        iterate = require('_iterator');
 
     /**
      * @private
@@ -12,7 +13,7 @@ module.exports = (function () {
      */
     function handleClasses(action, element, classes) {
         classes.forEach(function (className) {
-            element.nodeType === 1 && element.classList[action](className);
+            u.is.element(element) && element.classList[action](className);
         });
     }
 

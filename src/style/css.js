@@ -2,7 +2,8 @@ module.exports = (function () {
     'use strict';
 
     // Require dependencies
-    var iterate = require('_iterator');
+    var u = require('utils/index'),
+        iterate = require('_iterator');
 
     /**
      * Applies CSS styles to DOM element(s).
@@ -21,7 +22,7 @@ module.exports = (function () {
         }
 
         iterate(this, function (el) {
-            el.nodeType === 1 && applyStyles(el);
+            u.is.element(el) && applyStyles(el);
         });
 
         return this;
