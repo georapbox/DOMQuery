@@ -24,7 +24,7 @@ Returns: Boolean
 <section>
 ```
 
-#### JS
+#### Javascript
 ```js
 Q('#bar').hasClass('bar'); // => true
 Q('#bar').hasClass('foo'); // => false
