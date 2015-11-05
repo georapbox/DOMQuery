@@ -36,7 +36,7 @@ To avoid any possible conflicts with other global objects you can change those n
 
 ## DOMQuery API documentation
 
-[Click for API documention](docs)
+[Find the API documention here](docs#domquery-api)
 
 ## TODO
 1. Add more methods to library
