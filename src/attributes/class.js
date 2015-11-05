@@ -31,10 +31,20 @@ module.exports = (function () {
             });
             return this;
         },
-        toggleClass: function (className) {
+        toggleClass: function (className, state) {
             var classes = className.split(' ');
             iterate(this, function (el) {
-                handleClasses('toggle', el, classes);
+                switch (state) {
+                    case null || undefined:
+                        handleClasses('toggle', el, classes);
+                        break;
+                    case true:
+                        handleClasses('add', el, classes);
+                        break;
+                    case false:
+                        handleClasses('remove', el, classes);
+                        break;
+                }
             });
             return this;
         },
