@@ -16,6 +16,6 @@ Returns: [DOMQuery](../README.md#domquery-q)
 ## Examples
 
 ```js
-Q('p').addClass('newClass'); // Adds the "newClass" to all "p" elements found.
-Q('.newClass').addClass('foo bar'); // Adds the classes "foo" and "bar" to all elements with class "newClass".
+Q('p').addClass('newClass'); // => Adds the "newClass" to all "p" elements found.
+Q('.newClass').addClass('foo bar'); // => Adds the classes "foo" and "bar" to all elements with class "newClass".
 ```
