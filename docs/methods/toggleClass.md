@@ -8,7 +8,7 @@ Returns: [DOMQuery](../README.md#domquery-q)
 
 **Description:** Add or remove one or more classes from each matched element, depending on either the class's presence or the value of the optional state argument.
 
-## Parameters
+## Arguments
 
 > **className** {string}<br>
 > One or more space-separated classes to be toggled for each matched element.
