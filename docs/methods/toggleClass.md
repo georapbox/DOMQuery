@@ -13,7 +13,7 @@ Returns: [DOMQuery](../README.md#domquery-q)
 > **className** {string}<br>
 > One or more space-separated classes to be toggled for each matched element.
 
-> **[state]** {boolean}
+> **[state]** {boolean}<br>
 > A boolean value to determine whether the class should be added or removed.
 
 ## Examples
