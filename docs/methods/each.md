@@ -1,7 +1,7 @@
 # .each()
 
 ```js
-.each(function)
+.each(func)
 ```
 
 Returns: [DOMQuery](../README.md#domquery-q)
