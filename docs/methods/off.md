@@ -1,4 +1,4 @@
-# .on()
+# .off()
 
 ```js
 .off(eventName, listener [, useCapture])
