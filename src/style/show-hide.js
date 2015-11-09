@@ -5,10 +5,16 @@ module.exports = (function () {
     var u = require('utils/index'),
         iterate = require('_iterator');
 
-    function setDisplay(context, mode) {
-        iterate(context, function (el) {
+    /**
+     * @private
+     * Iterates each mached element and sets the display property.
+     * @param {object} obj The DOMQuery object.
+     * @param {string} value The value of "display" property.
+     */
+    function setDisplay(obj, value) {
+        iterate(obj, function (el) {
             if (u.is.element(el)) {
-                el.style.display = mode;
+                el.style.display = value;
             }
         });
     }
