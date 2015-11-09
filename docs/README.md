@@ -27,6 +27,8 @@ Q().parent().css({color: 'blue'}).toggleClass('foo').attr('data-test', 'test');
 |[.css()](methods/css.md#css)|Set one or more CSS properties for the set of matched elements.|
 |[.each()](methods/each.md#each)|Iterate over a DOMQuery object, executing a function for each matched element.|
 |[.hasClass()](methods/hasClass.md#hasclass)|Determine whether any element in the set of matched elements contain the given class.|
+|[.on()](methods/on.md#on)|Attach an event handler function for one event to the mathed elements.|
+|[.off()](methods/off.md#off)|Removes an event listener previously registered with ```.on()```.|
 |[.parent()](methods/parent.md#parent)|Get the parent of each element in the of matched elements set.|
 |[.removeAttr()](methods/removeAttr.md#removeattr)|Remove one or more attributes from each element in the set of matched elements.|
 |[.removeClass()](methods/removeClass.md#removeclass)|Removes the specified class(es) from each element in the set of matched elements.|
