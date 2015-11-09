@@ -19,21 +19,21 @@ module.exports = (function () {
 
     return {
         addClass: function (className) {
-            var classes = className.split(' ');
+            var classes = u.trim(className).split(' ');
             iterate(this, function (el) {
                 handleClasses('add', el, classes);
             });
             return this;
         },
         removeClass: function (className) {
-            var classes = className.split(' ');
+            var classes = u.trim(className).split(' ');
             iterate(this, function (el) {
                 handleClasses('remove', el, classes);
             });
             return this;
         },
         toggleClass: function (className, state) {
-            var classes = className.split(' ');
+            var classes = u.trim(className).split(' ');
             iterate(this, function (el) {
                 switch (state) {
                     case null || undefined:
