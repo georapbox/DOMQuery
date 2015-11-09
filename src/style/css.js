@@ -6,8 +6,8 @@ module.exports = (function () {
         iterate = require('_iterator');
 
     /**
-     * Applies CSS styles to DOM element(s).
-     * @param {object} styles Object literal holding CSS style properties.
+     * Set one or more CSS properties for the set of matched elements.
+     * @param {object} styles An object of property-value pairs to set.
      * @return {object} The DOMQuery object
      */
     return function css(styles) {
