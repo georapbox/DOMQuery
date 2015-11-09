@@ -11,20 +11,15 @@
 
     var fn = win[pkg.name].fn;
 
-    fn.css = require('style/css');
-    fn.show = require('style/show-hide').show;
-    fn.hide = require('style/show-hide').hide;
-
-    fn.addClass = require('attributes/class').addClass;
-    fn.removeClass = require('attributes/class').removeClass;
-    fn.toggleClass = require('attributes/class').toggleClass;
-    fn.hasClass = require('attributes/class').hasClass;
-    fn.attr = require('attributes/attr');
-    fn.removeAttr = require('attributes/removeAttr');
-
-    fn.each = require('traversing/each');
-    fn.parent = require('traversing/parent');
-
-    fn.on = require('events/on');
-    fn.off = require('events/off');
+    fn.attr = require('methods/attr');
+    fn.removeAttr = require('methods/removeAttr');
+    fn.addClass = require('methods/class').addClass;
+    fn.removeClass = require('methods/class').removeClass;
+    fn.toggleClass = require('methods/class').toggleClass;
+    fn.hasClass = require('methods/class').hasClass;
+    fn.css = require('methods/css');
+    fn.each = require('methods/each');
+    fn.parent = require('methods/parent');
+    fn.on = require('methods/on');
+    fn.off = require('methods/off');
 }(window, document));
