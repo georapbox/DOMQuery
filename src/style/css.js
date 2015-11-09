@@ -8,15 +8,15 @@ module.exports = (function () {
     /**
      * Applies CSS styles to DOM element(s).
      * @param {object} styles Object literal holding CSS style properties.
-     * @return {*}
+     * @return {object} The DOMQuery object
      */
     return function css(styles) {
         /**
          * @private
-         * @param {object} element The HTML element to add the syyles on.
+         * @param {object} element The HTML element to add the styles on.
          */
         function applyStyles(element) {
-            Object.keys(styles).forEach(function (key) {
+            u.is.plainObject(styles) && Object.keys(styles).forEach(function (key) {
                 element.style[key] = styles[key];
             });
         }
