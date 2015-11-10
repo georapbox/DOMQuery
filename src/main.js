@@ -22,4 +22,6 @@
     fn.parent = require('methods/parent');
     fn.on = require('methods/on');
     fn.off = require('methods/off');
+    fn.next = require('methods/next-prev').next;
+    fn.prev = require('methods/next-prev').prev;
 }(window, document));
