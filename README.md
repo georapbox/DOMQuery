@@ -26,7 +26,9 @@ $ npm run watch
 ```
 This will watch for any changes that happen in ```src``` folder and will generate the unminified bundle in ```dist``` folder.
 
-### 4. Change the library name and alias
+## Custom build
+
+### 1. Change the library name and alias
 DOMQuery exposes 2 variables to the window global object:
 
 1. ```DOMQuery```
@@ -34,12 +36,15 @@ DOMQuery exposes 2 variables to the window global object:
 
 To avoid any possible conflicts with other global objects you can change those namespaces in the ```package.json``` file by changing the ```name``` and ```alias``` properties. After you change any of them make sure to rebuild the library in order to generate the updated bundles.
 
+### 2. Build with custom methods
+All API methods are defined in ```src/main.js``` file.
+You can delete or comment out any methods you may not need for your custom build and they will not be included in the final bundle file.
+
 ## DOMQuery API documentation
 
 [Find the API documention here](docs#domquery-api)
 
 ## TODO
 1. Add more methods to library
-2. Add API documentation
-3. Do some unit testing for each library methods
-4. Optimize for performance where possible
+2. Do some unit testing for each library method
+3. Optimize for performance where possible

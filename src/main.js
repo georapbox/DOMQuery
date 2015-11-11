@@ -11,6 +11,7 @@
 
     var fn = win[pkg.name].fn;
 
+    // API methods: Delete or comment out any methods we don't need for our build
     fn.attr = require('methods/attr');
     fn.removeAttr = require('methods/removeAttr');
     fn.addClass = require('methods/class').addClass;
