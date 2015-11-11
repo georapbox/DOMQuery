@@ -2,7 +2,8 @@ module.exports = (function () {
     'use strict';
 
     // Require dependancies
-    var iterate = require('_iterator');
+    var u = require('utils/index'),
+        iterate = u.iterator;
 
     return function parent() {
         var that = this,

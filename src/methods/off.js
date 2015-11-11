@@ -2,7 +2,8 @@ module.exports = (function () {
     'use strict';
 
     // Require dependencies
-    var iterate = require('_iterator');
+    var u = require('utils/index'),
+        iterate = u.iterator;
 
     /**
      * Remove an event listener previously registered with .on().

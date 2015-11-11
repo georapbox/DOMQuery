@@ -3,7 +3,8 @@ module.exports = (function () {
 
     // Require dependencies
     var u = require('utils/index'),
-        iterate = require('_iterator');
+        iterate = u.iterator,
+        is = u.is;
 
     /**
      * @private
@@ -13,7 +14,7 @@ module.exports = (function () {
      */
     function handleClasses(action, element, classes) {
         classes.forEach(function (className) {
-            u.is.element(element) && element.classList[action](className);
+            is.element(element) && element.classList[action](className);
         });
     }
 

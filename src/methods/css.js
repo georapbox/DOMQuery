@@ -3,7 +3,8 @@ module.exports = (function () {
 
     // Require dependencies
     var u = require('utils/index'),
-        iterate = require('_iterator');
+        iterate = u.iterator,
+        is = u.is;
 
     /**
      * Set one or more CSS properties for the set of matched elements.
@@ -16,13 +17,13 @@ module.exports = (function () {
          * @param {object} element The HTML element to add the styles on.
          */
         function applyStyles(element) {
-            u.is.plainObject(styles) && Object.keys(styles).forEach(function (key) {
+            is.plainObject(styles) && Object.keys(styles).forEach(function (key) {
                 element.style[key] = styles[key];
             });
         }
 
         iterate(this, function (el) {
-            u.is.element(el) && applyStyles(el);
+            is.element(el) && applyStyles(el);
         });
 
         return this;

@@ -3,7 +3,8 @@ module.exports = (function () {
 
     // Require dependencies
     var u = require('utils/index'),
-        iterate = require('_iterator');
+        iterate = u.iterator,
+        is = u.is;
 
     /**
      * Remove one or more attributes from each element in the set of matched elements.
@@ -13,11 +14,11 @@ module.exports = (function () {
     return function attr(attrName) {
         var attrs;
 
-        if (attrName && u.is.string(attrName)) {
+        if (attrName && is.string(attrName)) {
             attrs = u.trim(attrName).split(' ');
             iterate(this, function (el) {
                 attrs.forEach(function (attr) {
-                    u.is.element(el) && el.removeAttribute(attr);
+                    is.element(el) && el.removeAttribute(attr);
                 });
             });
         }

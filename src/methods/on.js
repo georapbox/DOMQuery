@@ -2,7 +2,8 @@ module.exports = (function () {
     'use strict';
 
     // Require dependencies
-    var iterate = require('_iterator');
+    var u = require('utils/index'),
+        iterate = u.iterator;
 
     /**
      * Attach an event handler function for one event to the mathed elements.

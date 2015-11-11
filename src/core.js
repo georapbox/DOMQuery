@@ -3,7 +3,8 @@ module.exports = (function (win, doc, undefined) {
 
     // Require dependencies
     var pkg = require('package.json'),
-        u = require('utils/index');
+        u = require('utils/index'),
+        is = u.is;
 
     // DOMQuery returns new Library object that hold our selector. Ex: Q('.wrapper')
     var DOMQuery = function (params) {
@@ -11,9 +12,9 @@ module.exports = (function (win, doc, undefined) {
     };
 
     var Core = function (params) {
-        var invalidParams = u.is.string(params) &&
+        var invalidParams = is.string(params) &&
             (!params || u.trim(params) === '' || u.trim(params) === '#' || u.trim(params) === '.') ||
-            params == null // jshint ignore:line
+            is.nullOrUndefined(params);
 
         if (invalidParams) {
             return this;
@@ -25,19 +26,19 @@ module.exports = (function (win, doc, undefined) {
 
         switch (true) {
             // Selector is a string
-            case u.is.string(params):
+            case is.string(params):
                 selector = doc.querySelectorAll(params);
                 this.length = selector.length;
                 this.selector = params;
                 break;
             // Selector is a Nodelist
-            case u.is.not.string(params) && params.length !== undefined && u.is.not.array(params):
+            case is.not.string(params) && params.length !== undefined && is.not.array(params):
                 selector = params;
                 this.length = params.length;
                 break;
             // Selector is an HTML element
-            case u.is.not.string(params) && params.length == null && u.is.element(params): // jshint ignore:line
-                if (params != null) { // jshint ignore:line
+            case is.not.string(params) && is.nullOrUndefined(params.length) && is.element(params):
+                if (is.not.nullOrUndefined(params)) {
                     selector = [params];
                     this.length = 1;
                 }

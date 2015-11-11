@@ -3,7 +3,8 @@ module.exports = (function () {
 
     // Require dependencies
     var u = require('utils/index'),
-        iterate = require('_iterator');
+        iterate = u.iterator,
+        is = u.is;
 
     /**
      * Set one or more attributes for every matched element or
@@ -13,15 +14,15 @@ module.exports = (function () {
      */
     return function attr(attributes) {
         // Get attribute value
-        if (u.is.string(attributes) && u.is.element(this[0])) {
+        if (is.string(attributes) && is.element(this[0])) {
             return this[0].getAttribute(attributes) || undefined;
         }
 
         // Set attributes
-        if (u.is.plainObject(attributes)) {
+        if (is.plainObject(attributes)) {
             iterate(this, function (el) {
                 Object.keys(attributes).forEach(function (attrName) {
-                    u.is.element(el) && el.setAttribute(attrName, attributes[attrName]);
+                    is.element(el) && el.setAttribute(attrName, attributes[attrName]);
                 });
             });
             return this;
