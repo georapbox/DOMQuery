@@ -172,6 +172,69 @@ module.exports = (function () {
         return value && value.nodeType === 1 && value instanceof Element === true || false;
     }
 
+    /**
+     * Determine if 'value' is an Element node such as <p> or <div>.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isElementNode(value) {
+        return value && value.nodeType === 1;
+    }
+
+    /**
+     * Determine if 'value' is the actual Text of Element or Attr.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isTextNode(value) {
+        return value && value.nodeType === 3;
+    }
+
+    /**
+     * Determine if 'value' is a ProcessingInstruction of an XML document such as <?xml-stylesheet ... ?> declaration.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isProcessingInsctructionNode(value) {
+        return value && value.nodeType === 7;
+    }
+
+    /**
+     * Determine if 'value' is a comment node.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isCommentNode(value) {
+        return value && value.nodeType === 8;
+    }
+
+    /**
+     * Determine if 'value' is Document node.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isDocumentNode(value) {
+        return value && value.nodeType === 9;
+    }
+
+    /**
+     * Determine if 'value' is a DocumentType node e.g. <!DOCTYPE html> for HTML5 documents.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isDocumentTypeNode(value) {
+        return value && value.nodeType === 10;
+    }
+
+    /**
+     * Determine if 'value' is a DocumentFragment node.
+     * @param {*} The value to check.
+     * @return {boolean}
+     */
+    function isDocumentFragmentNode(value) {
+        return value && value.nodeType === 11;
+    }
+
     // API
     /* -------------------------------------------------------------------------- */
     is = {
@@ -186,7 +249,14 @@ module.exports = (function () {
         'number': isNumber,
         'boolean': isBoolean,
         'nullOrUndefined': isNullOrUndefined,
-        'element': isElement
+        'element': isElement,
+        'elementNode': isElementNode,
+        'textNode': isTextNode,
+        'processingInsctructionNode': isProcessingInsctructionNode,
+        'commentNode': isCommentNode,
+        'documentNode': isDocumentNode,
+        'documentTypeNode': isDocumentTypeNode,
+        'documentFragmentNode': isDocumentFragmentNode
     };
 
     // Set 'not', 'all' and 'any' interfaces to methods based on their api property.
