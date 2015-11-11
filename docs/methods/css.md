@@ -1,7 +1,7 @@
 # .css()
 
 ```js
-.css(styles)
+.css(properties)
 ```
 
 Returns: [DOMQuery](../README.md#domquery-q)
@@ -10,7 +10,7 @@ Returns: [DOMQuery](../README.md#domquery-q)
 
 ## Arguments
 
-> **styles** {object}<br>
+> **properties** {object}<br>
 > An object of property-value pairs to set.
 
 ## Examples
@@ -21,4 +21,49 @@ Q('#test a').css({
     textDecoration: 'none',
     'font-weight': 'bold'
 });
+```
+
+-----------------------------------------------------------------------
+
+```js
+.css(property)
+```
+
+Returns: String
+
+**Description:** Get the computed style properties for the first element in the set of matched elements.
+
+## Arguments
+
+> **property** {string}<br>
+> A string representing the property name.
+
+## Examples
+
+#### HTML
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #foobar {
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <p id="foobar">Foo Bar</p>
+</body>
+</html>
+```
+
+#### Javascript
+```js
+Q('#foobar').css('position'); // => "absolute"
+Q('#foobar').css('left'); // => "100px"
+Q('#foobar').css('top'); // => "200px"
+Q('#foobar').css('height'); // => "150px"
 ```

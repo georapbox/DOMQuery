@@ -25,7 +25,7 @@ Q().parent().css({color: 'blue'}).toggleClass('foo').attr('data-test', 'test');
 |[.addClass()](methods/addClass.md#addclass)|Adds the specified class(es) to each element in the set of matched elements.|
 |[.append()](methods/append.md#append)|Insert HTML content to the end of every matched element.|
 |[.attr()](methods/attr.md#attr)|Set one or more attributes for every element in the matched elements set or get the value of an attribute for the first element in the matched elements.|
-|[.css()](methods/css.md#css)|Set one or more CSS properties for the set of matched elements.|
+|[.css()](methods/css.md#css)|Set one or more CSS properties for the set of matched elements or get the computed style properties for the first element in the set of matched elements.|
 |[.each()](methods/each.md#each)|Iterate over a DOMQuery object, executing a function for each matched element.|
 |[.hasClass()](methods/hasClass.md#hasclass)|Determine whether any element in the set of matched elements contain the given class.|
 |[.html()](methods/html.md#html)|Set the HTML contents of every matched element or get the HTML contents of the first element in the matched elements set.|
