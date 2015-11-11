@@ -1,7 +1,7 @@
 # .append()
 
 ```js
-.append(htmlString)
+.append(content)
 ```
 
 Returns: [DOMQuery](../README.md#domquery-q)
@@ -10,8 +10,8 @@ Returns: [DOMQuery](../README.md#domquery-q)
 
 ## Arguments
 
-> **htmlString** {string}<br>
-> The HTML string to insert.
+> **content** {string|object}<br>
+> The HTML string or DOM element or DocumentFragment node to insert.
 
 ## Examples
 
