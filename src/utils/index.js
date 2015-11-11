@@ -7,6 +7,7 @@ module.exports = (function () {
     return {
         is: require('utils/misc/is'),
         iterator: require('utils/misc/iterator'),
+        createElement: require('utils/misc/createElement'),
         trim: require('utils/strings/trim')
     };
 }());
