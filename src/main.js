@@ -25,4 +25,5 @@
     fn.off = require('methods/off');
     fn.next = require('methods/next-prev').next;
     fn.prev = require('methods/next-prev').prev;
+    fn.html = require('methods/html');
 }(window, document));
