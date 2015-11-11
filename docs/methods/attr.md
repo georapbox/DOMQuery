@@ -58,6 +58,4 @@ Q('#foobar').attr('data-name'); // => "foobar-name"
 Q('#foobar').attr('id'); // => "foobar"
 
 Q('section p').attr('data-name'); // => undefined, because it only returns the value of an attribute for the first element in the matched elements set
-
-
 ```
