@@ -1,8 +1,8 @@
 {
   "name": "DOMQuery",
   "alias": "Q",
-  "version": "0.1.5",
-  "stability": "experimental",
+  "version": "0.1.6",
+  "stability": "alpha",
   "description": "Skinny DOM library for modern browsers",
   "homepage": "https://github.com/georapbox/DOMQuery",
   "repository": "https://github.com/georapbox/DOMQuery.git",

@@ -1,5 +1,9 @@
-# DOMQuery.js (experimental)
+# DOMQuery.js (alpha)
+
 DOMQuery (aka Q) is a skinny, experimental DOM library for **modern browsers** with a jQuery like API. So far it comes with some of the methods I found myself using more often when I mess around with DOM.
+
+The reason behind DOMQuery is the fact that I wanted a minimal library for DOM manipulation that utilizes the newest DOM API but also allows chaining. DOMQuery is by no means a replacement of jQuery despite the fact that the API is a lot like this of jQuery.
+This was intentional, as the jQuery's API is very elegant and most developers are familiar with it.
 
 ## Build
 
