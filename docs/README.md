@@ -34,6 +34,7 @@ Q().parent().css({color: 'blue'}).toggleClass('foo').attr('data-test', 'test');
 |[.on()](methods/on.md#on)|Attach an event handler function for one event to the mathed elements.|
 |[.parent()](methods/parent.md#parent)|Get the parent of each element in the of matched elements set.|
 |[.prev()](methods/prev.md#prev)|Get the immediately preceding sibling of each element in the set of matched elements.|
+|[.ready()](methods/ready.md#ready)|Execute a function when DOM is fully loaded.|
 |[.removeAttr()](methods/removeAttr.md#removeattr)|Remove one or more attributes from each element in the set of matched elements.|
 |[.removeClass()](methods/removeClass.md#removeclass)|Removes the specified class(es) from each element in the set of matched elements.|
 |[.toggleClass()](methods/toggleClass.md#toggleclass)|Add or remove one or more classes from each matched element, depending on either the class's presence or the value of the optional state argument.|
