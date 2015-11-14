@@ -37,7 +37,7 @@ module.exports = (function (win, doc, undefined) {
                 this.length = params.length;
                 break;
             // Selector is an HTML element
-            case is.not.string(params) && is.nullOrUndefined(params.length) && is.element(params):
+            case is.not.string(params) && is.nullOrUndefined(params.length) && (is.element(params) || is.documentNode(params)):
                 if (is.not.nullOrUndefined(params)) {
                     selector = [params];
                     this.length = 1;

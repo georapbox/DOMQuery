@@ -24,6 +24,7 @@
     fn.on = require('methods/on');
     fn.parent = require('methods/parent');
     fn.prev = require('methods/next-prev').prev;
+    fn.ready = require('methods/ready');
     fn.removeAttr = require('methods/removeAttr');
     fn.removeClass = require('methods/class').removeClass;
     fn.toggleClass = require('methods/class').toggleClass;
