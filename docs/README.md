@@ -12,7 +12,7 @@ In the example below the ```css``` method returns the original DOMQuery object s
 Q('.error').css({color: 'red'}).addClass('highlight');
 ```
 
-A DOMQuery object may be empty if a selector doesn't select any elements. Any further methods called on that DOMQuery object simply have no effect since they have no elements to act upon. In the example below we create an empty DOMQuery object and call a couple of methods on that object without any errors occuring.
+A DOMQuery object may be empty if a selector doesn't select any elements. Any further methods called on that DOMQuery object simply have no effect since they have no elements to act upon. In the example below we create an empty DOMQuery object and call a couple of methods on that object without any errors occurring.
 
 ```js
 Q().parent().css({color: 'blue'}).toggleClass('foo').attr('data-test', 'test');
