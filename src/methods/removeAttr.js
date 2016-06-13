@@ -8,7 +8,7 @@ module.exports = (function () {
 
     /**
      * Remove one or more attributes from each element in the set of matched elements.
-     * @param {string} attrName The attribute(s) (space-seperated) to remove.
+     * @param {string} attrName The attribute(s) (space-separated) to remove.
      * @return {object} The DOMQuery object.
      */
     return function attr(attrName) {

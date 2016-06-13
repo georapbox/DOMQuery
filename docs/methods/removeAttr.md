@@ -11,7 +11,7 @@ Returns: [DOMQuery](../README.md#domquery-q)
 ## Arguments
 
 > **attrName** {string}<br>
-> The attribute(s) to remove. To remove more than one attribute, use a space-seperated string.
+> The attribute(s) to remove. To remove more than one attribute, use a space-separated string.
 
 ## Examples
 

@@ -10,7 +10,7 @@ module.exports = (function () {
      * @private
      * @param {string} action The action to be taken. Eg "add", "remove" or "toggle" class.
      * @param {object} element The HTML element to handle.
-     * @param {array} classes Array containing the class names. Can add/remove/toggle many classes seperated by a whitespace.
+     * @param {array} classes Array containing the class names. Can add/remove/toggle many classes separated by a whitespace.
      */
     function handleClasses(action, element, classes) {
         classes.forEach(function (className) {
